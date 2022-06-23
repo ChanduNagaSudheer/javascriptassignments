@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<head>
+    <title>Nth fibonacci number</title>
+</head>
+<script>
+    var n=prompt("enter the number");
+    var k=fib(n);
+    document.write(k);
+    function fib(n)
+    {
+        if(n<=1)
+        {
+          return n;
+        }
+        else
+        {
+            return fib(n-1)+fib(n-2);
+        }
+    }
+
+</script>

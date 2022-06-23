@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        <centre>Prime or not</centre>
+    </title>
+</head>
+<script>
+    var n=prompt("enter the number");
+    
+    function prime(n){
+        if(n<=1)
+        {
+            return false;
+        }
+        else{
+            for ( i = 2; i <= Math.sqrt(n);i++){
+                if (n % i == 0)
+                {
+                   return false;
+                }
+
+            }
+            return true;
+        }
+    }
+    if(prime(n))
+    {
+        document.write("true");
+    }
+    else
+    {
+        document.write("false");
+    }
+</script>
