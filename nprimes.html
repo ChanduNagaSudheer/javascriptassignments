@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<Head>
+    <title>
+        Array operation
+    </title>
+</Head>
+<script>
+    var n=prompt("enter the array size");
+    var a=prompt("enter startat number");
+    const array =[n];
+    for(i=0;i<n;i++)
+    {
+        array[i]=prompt("enter element");
+    }
+    function prime(k){
+        if(k<=1)
+        {
+            return false;
+        }
+        else{
+            for ( i = 2; i <= Math.sqrt(k);i++){
+                if (k % i == 0)
+                {
+                   return false;
+                }
+
+            }
+            return true;
+        }
+    }
+    for(i=0;i<n;i++)
+    {
+        if(prime(array[i]))  
+          {
+            if(array[i]>a)
+            {
+                 document.write(array[i]+" ");
+            }
+          }
+    }
+</script>

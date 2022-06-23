@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<Head>
+    <title>
+        Array operation
+    </title>
+</Head>
+<script>
+    var n=prompt("enter the array size");
+    const array =[n];
+    for(i=0;i<n;i++)
+    {
+        array[i]=prompt("enter element");
+    }
+    var last=array[n-1];
+    for(i=n-1;i>=0;i--)
+    {
+        array[i]=array[i-1];
+    }
+    array[0]=last;
+    for(i=0;i<n;i++)
+    {
+        document.write(array[i]+" ");
+    }
+</script>
